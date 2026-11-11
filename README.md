@@ -1,2 +1,95 @@
-# Nova-Retail-
-Análisis de Correlacione entre usuarios, ventas y publicidad 2025
+NovaRetail+ | Análisis Exploratorio de Datos (EDA) y Segmentación de Clientes
+
+📌 Descripción del Proyecto
+
+Este repositorio contiene un Análisis Exploratorio de Datos (EDA) exhaustivo para NovaRetail+, una plataforma e-commerce en crecimiento. El objetivo principal es comprender las dinámicas de comportamiento, patrones de compra, adopción de cuentas Premium y factores asociados con la tasa de abandono (churn) de una base de 15,000 usuarios.
+
+El proyecto abarca desde la limpieza de datos y tipificación de variables hasta el análisis univariado, bivariado y la formulación de recomendaciones estratégicas para los equipos de Crecimiento y Retención.
+
+📊 Hallazgos Clave
+
+Uso de Dispositivos y Cobertura:
+
+Prevalencia del canal Móvil (~65%) frente al de Escritorio (~35%).
+
+Distribución regional liderada por la región Norte (~29%).
+
+Suscripción Premium vs. Estándar:
+
+La penetración de membresías Premium se ubica en un ~14%.
+
+Existe una correlación positiva considerable entre los clientes Premium y un mayor nivel de ingreso_anual generado para la plataforma.
+
+Análisis de Abandono (Churn):
+
+La tasa global de abandono ronda el ~15%. Se identificó que la insatisfacción y la baja frecuencia de visitas son alertas tempranas críticas.
+
+Impacto Publicitario:
+
+El gasto en publicidad dirigida muestra una asociación positiva con las visitas mensuales, aunque se enfatiza que correlación no implica causalidad.
+
+🛠️ Tecnologías y Librerías Utilizadas
+
+Lenguaje: Python
+
+Procesamiento de Datos: pandas, numpy
+
+Visualización de Datos: matplotlib, seaborn
+
+Entorno: Jupyter Notebook / Google Colab
+
+📁 Estructura del Repositorio
+
+├── data/
+│   └── dataset_novaretail.csv     # Dataset sintético de usuarios (15,000 registros)
+├── notebooks/
+│   └── novaretail_eda.ipynb       # Notebook ejecutable con el análisis completo
+├── README.md                      # Documentación del proyecto
+└── requirements.txt               # Lista de dependencias del entorno
+
+
+🚀 Cómo Ejecutar este Proyecto
+
+Clonar el repositorio:
+
+git clone https://github.com/tu-usuario/novaretail-eda.git
+cd novaretail-eda
+
+
+Crear y activar un entorno virtual (Opcional pero recomendado):
+
+python -m venv venv
+source venv/bin/activate  # En Windows usa: venv\Scripts\activate
+
+
+Instalar dependencias:
+
+pip install -r requirements.txt
+
+
+Ejecutar el Notebook:
+
+jupyter notebook notebooks/novaretail_eda.ipynb
+
+
+⚠️ Limitaciones del Análisis
+
+Ausencia de Causalidad: Los hallazgos se basan en correlaciones observacionales. No se pueden inferir efectos causales directos sin pruebas A/B.
+
+Sesgo de Desbalance: Las variables miembro_premium y abandono presentan un desbalance de clases (~14% y ~15%), lo que requiere un tratamiento especial para modelado predictivo futuro.
+
+Estaticidad: El estudio representa una foto transversal al cierre de 2024, sin capturar estacionalidad mensual completa.
+
+🔮 Próximos Pasos Propuestos
+
+[ ] Implementar modelos predictivos supervisados (Random Forest / XGBoost) para Feature Importance de ingreso_anual y abandono.
+
+[ ] Aplicar algoritmos de agrupamiento (Clustering con K-Means) para segmentar a los usuarios por valor de vida de cliente (LTV).
+
+[ ] Diseñar experimentos A/B para evaluar la elasticidad del gasto en publicidad dirigida.
+
+👤 Autor
+
+Jose Miguel Davila– Data Analyst
+
+Email: jmigueldlav@gmail.com
